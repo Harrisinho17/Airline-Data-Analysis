@@ -43,9 +43,9 @@ This project demonstrates an end-to-end data pipeline using only free tools. It 
    - On-time performance by airport
    - Live snapshot of flight statuses (optional)
 
-## 📊 Sample Dashboard
+## 📊 Dashboard
 
-> [Insert screenshot or GIF of Power BI dashboard]
+> 
 
 ## ⚙️ Getting Started
 
@@ -81,11 +81,6 @@ python data_ingestion/fetch_flight_data.py
 - Navigate to `dashboards/flight_analysis.pbix`
 - Update data source if needed (PostgreSQL connection)
 
-## 🧠 Future Improvements
-
-- Add weather API for correlation analysis
-- Build Streamlit app for flight search
-- Include predictive delay model
 
 ## 📄 License
 

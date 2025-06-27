@@ -4,18 +4,23 @@ A fully open-source data pipeline project that fetches real-time airline and fli
 
 ## 📌 Project Overview
 
-This project demonstrates an end-to-end data pipeline using only free tools. It tracks airline flight status, delays, and performance over time using real-time API data and presents actionable insights through interactive dashboards.
+This project focuses on analyzing flights to Japan using new tools and techniques. The goal is to collect data from online sources (via web scraping or APIs), automate its collection on a scheduled basis, and generate insights such as customer satisfaction, delay estimations, and pricing fluctuations. It uses Airtable and Zapier to integrate and automate parts of the pipeline, with Power BI for interactive visualization. PostgreSQL may be used optionally for structured data storage.
+
+Key goals:
+- Explore new tools: Airtable, Zapier, Power BI
+- Focus on flights bound for Japan
+- Automate data collection and integration
+- Extract insights about airline operations and performance
 
 ## 🧱 Tech Stack
 
-| Component       | Tool/Service               |
-|----------------|----------------------------|
-| Data Source     | AeroDataBox API (RapidAPI) / OpenSky Network |
-| Ingestion       | Python (`requests`, `schedule`) |
-| Storage         | PostgreSQL + pgAdmin      |
-| Transformation  | Python + SQL              |
-| Visualization   | Power BI Desktop          |
-| Scheduling      | `cron` or `schedule` module in Python |
+| Component         | Tool/Service                         |
+|-------------------|--------------------------------------|
+| Data Scraping     | AeroDataBox, OpenSky, Google Flights |
+| Automation        | Zapier, Python                       |
+| Storage           | Airtable                             |
+| Transformation    | Python, SQL                          |
+| Visualization     | Power BI Desktop                     |
 
 ## 🗂️ Project Structure
 
@@ -34,14 +39,15 @@ This project demonstrates an end-to-end data pipeline using only free tools. It 
 
 ## 🚀 How It Works
 
-1. **Fetch real-time flight data** from a free API (e.g., AeroDataBox).
-2. **Store the data** in a local PostgreSQL database.
-3. **Transform and clean** the data using Python and SQL.
-4. **Visualize key metrics** in Power BI:
-   - Average flight delay by airline
-   - Most delayed routes
-   - On-time performance by airport
-   - Live snapshot of flight statuses (optional)
+1. **Collect flight data** using free APIs or scrape online sources like Google Flights.
+2. **Schedule automatic pulls** using Zapier or Python.
+3. **Store and manage data** in Airtable (or PostgreSQL if needed).
+4. **Transform data** to calculate delay trends, pricing fluctuations, and satisfaction patterns.
+5. **Visualize results** using Power BI with dashboards like:
+   - Flight price trends by region
+   - Delay patterns by airline
+   - Popular routes to Japan
+   - Correlation between booking time and delays or pricing
 
 ## 📊 Dashboard
 
